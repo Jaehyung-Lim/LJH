@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int n;
+
+int main(){
+   cin>>row;//행
+   cin>>col;//열
+   int** a=new int*[row]; //n개의 행
+   
+   for(int i=0;i<row;i++){//
+      a[i]=new int[col] //col만큼의 열을 생성; 각 행 a[i]에 col개 만큼의 열 생성 
+   }
+
+
+   for(int i=0;i<row;i++){//행의 개수만큼 돌려줘야 해당 행에서의 열이 delete[]에 의해 자동으로 삭제
+      delete[] a[i];
+   }
+   delete[] a;//남은 n개의 행까지 모두 삭제
+ 
+   return 0;
+}
+   
