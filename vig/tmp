@@ -1,0 +1,31 @@
+aws rekognition start-label-detection --video "S3Object={Bucket="jhlim2993",Name="justin.mp4"}" \
+--notification-channel "SNSTopicArn="arn:aws:sns:ap-northeast-2:233999749154:AmazonRekognition.fifo",RoleArn="arn:aws:iam::233999749154:role/jhlim2993_for_Rekognition_Video_Service"" \
+--endpoint-url "https://rekognition.ap-northeast-2.amazonaws.com" \
+--region ap-northeast-2 
+    
+    
+    
+    
+   
+
+
+
+aws rekognition get-label-detection  --job-id "" \
+--region us-east-1
+
+
+aws rekognition get-label-detection  --job-id "bb881adcaca8cd88ed5a860f0caea8d9620afbdc8ace8d202e5cd24e74b12860" \
+--region us-east-1
+
+
+
+
+
+
+
+
+
+job id는 저 맨 처음에 있는 코드 실행시킨 결과임.
+
+처음 누르자마자 나온 job id를 바로 실행시키면, 처음엔 progress라 뜸. 원래 분석하려면 시간 좀 걸리나 봄
+
